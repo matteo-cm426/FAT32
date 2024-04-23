@@ -26,7 +26,7 @@ Afin d'être capable de lire des données sur un disque formaté en FAT32, parlo
 
 ## Les secteurs
 
-Un disque dur, comme plusieurs médiums de stockage, ne permet pas de lire un byte particulier directement. En effet, la granularité est limitée à ce que l'on appelle un secteur. Un secteur a une interprétation physique, mais nous ne soucierions pas de celle-ci dans ce document. Un secteur est donc, pour nous, une zone de bytes contigus. Sur un disque dur, un secteur est traditionnellement de 512 bytes. Le système FAT tient compte de cette abstraction, mais ne force pas un secteur à être de taille de 512 bytes: le système de fichiers peut être construit selon une taille de secteur variable. Il s'agit d'un détail important dont il faut tenir compte, puisque la lecture et le positionnement des données pourrait être différents.
+Un disque dur, comme plusieurs médiums de stockage, ne permet pas de lire un byte particulier directement. En effet, la granularité est limitée à ce que l'on appelle un secteur. Un secteur a une interprétation physique, mais nous ne nous soucierions pas de celle-ci dans ce document. Un secteur est donc, pour nous, une zone de bytes contigus. Sur un disque dur, un secteur est traditionnellement de 512 bytes. Le système FAT tient compte de cette abstraction, mais ne force pas un secteur à être de taille de 512 bytes: le système de fichiers peut être construit selon une taille de secteur variable. Il s'agit d'un détail important dont il faut tenir compte, puisque la lecture et le positionnement des données pourrait être différents.
 
 ## Les clusters
 
